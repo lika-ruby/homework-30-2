@@ -1,0 +1,44 @@
+.container {
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  animation-name: box-color-movement;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes box-color-movement {
+  0% {
+    background-color: red;
+    transform: translate(-150%, -150%);
+  }
+
+  25% {
+    background-color: blue;
+    transform: translate(-150%, 150%);
+  }
+
+  50% {
+    background-color: green;
+    transform: translate(150%, 150%);
+  }
+
+  75% {
+    background-color: yellow;
+    transform: translate(150%, -150%);
+  }
+
+  100% {
+    background-color: red;
+    transform: translate(-150%, -150%);
+  }
+}
